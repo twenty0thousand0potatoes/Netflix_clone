@@ -1,0 +1,74 @@
+.wrapperLibraryBlock {
+
+    .wrapperCards {
+        margin-top: 50px;
+   
+        border-radius: 10px;
+        background: #43435042;
+        display: flex;
+    
+        align-items: center;
+        padding: 20px;
+        width: 1400px;
+        flex-wrap: wrap;
+
+        .cardFilm {
+            margin: 10px 30px;
+            line-height: 25px;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 220px;
+            height: 340px;
+
+            .topPartCard {
+
+                img {
+                    transition: 2s all;
+                    box-shadow: inset 20px 20px 10px #000;
+                    width: 210px;
+                    height: 260px;
+                    border-radius: 10px;
+                }
+
+                .toolsButton{
+                    position: relative;
+                    top: -30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center ;
+                    button{
+                        cursor: pointer;
+                        background: none;
+                        border: 2px solid grey;
+                        border-radius: 10px;
+                        color: #fff;
+                        font-size: 12px;
+                    }
+
+                }
+            }
+
+            .bottomPartCard {
+                color: #fff;
+
+                .titleFilm {
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+        .cardFilm:hover {
+            img {
+                transform: scale(1.13);
+                opacity: 0.75;
+            }
+
+            .titleFilm,
+            .duration {
+                text-decoration: underline;
+            }
+        }
+    }
+}

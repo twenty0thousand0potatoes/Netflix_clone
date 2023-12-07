@@ -1,0 +1,120 @@
+@mixin buttons {
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+@keyframes jumpLetter {
+    10% {
+        top: -1px;
+    }
+
+    20% {
+        top: -2px;
+    }
+
+    30% {
+        top: -3px;
+    }
+
+    40% {
+        top: -4px;
+    }
+
+    50% {
+        top: -5px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@mixin animation {
+    position: relative;
+    animation-name: jumpLetter;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: all 3s;
+}
+
+.logoConteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textConteiner {
+        color: #A30E19;
+        align-self: flex-end;
+        font-size: 45px;
+        margin-bottom: -14px;
+        margin-left: -36px;
+
+        .letter {
+            max-height: 55px;
+            text-shadow: 0.0001px 0.0001px 2px rgb(255, 255, 255);
+            color: #A30E19;
+        }
+
+        .first {
+            @include animation();
+        }
+
+        .second {
+            @include animation();
+            animation-delay: 1.5s;
+        }
+
+        .third {
+            @include animation();
+        }
+
+        .fourth {
+            @include animation();
+            animation-delay: 1.5s;
+        }
+
+        .fifth {
+            @include animation();
+        }
+
+        .sixth {
+            @include animation();
+            animation-delay: 1.5s;
+        }
+    }
+}
+
+.headerWrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(5px);
+
+    .rightPart {
+        display: flex;
+        align-self: center;
+        padding-right: 40px;
+
+       
+        .enterButtonWrapper {
+            padding: 5px;
+
+            button {
+                @include buttons();
+                background-color: #A30E19;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid #380f0f;
+            }
+        }
+    }
+
+}

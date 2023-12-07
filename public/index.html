@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <link rel="icon" href="%PUBLIC_URL%/icon.ico" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="theme-color" content="#000000" />
+   <meta name="description" content="Web site created using create-react-app" />
+   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+   <title>Fadelix - лучшие фильмы и сериалы здесь!</title>
+   <style>
+      #preloader {
+         background: #A6A6A6;
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         top: 0;
+         left: 0;
+      }
+      .preloader-dots {
+         margin: 4% auto;
+         width: 20%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .preloader-dots .dot {
+         background: #AF0C18;
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         border: 5px solid #890912;
+         animation: unvisib 1.8s infinite;
+      }
+
+      .dot:nth-child(2) {
+         animation-delay: .15s;
+      }
+
+      .dot:nth-child(3) {
+         animation-delay: .3s;
+      }
+
+      .dot:nth-child(4) {
+         animation-delay: .45s;
+      }
+
+      .dot:nth-child(5) {
+         animation-delay: .6s;
+      }
+
+      @keyframes unvisib {
+         0% {
+            opacity: 0;
+         }
+
+         35% {
+            opacity: 0.3;
+         }
+
+         50% {
+            opacity: 0.8;
+         }
+
+         70% {
+            opacity: 0.5;
+         }
+
+         85% {
+            opacity: 0.3;
+         }
+      }
+
+      .logo{
+         width:20%;
+         margin: 80px auto;
+      }
+
+   </style>
+   <script>
+      window.onload = () => {
+         document.getElementById('preloader').remove();
+      }
+   </script>
+</head>
+
+<body>
+   <div class='preloader' id="preloader">
+      <div class="logo">
+         <svg width="350" height="400" viewBox="0 0 439 748" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 276H389C416.614 276 439 298.386 439 326V351C439 378.614 416.614 401 389 401H64C36.3858 401 14 378.614 14 351V276Z" fill="#890912"/>
+            <path d="M14 50C14 22.3858 36.3858 0 64 0H89C116.614 0 139 22.3858 139 50V698C139 725.614 116.614 748 89 748H64C36.3858 748 14 725.614 14 698V50Z" fill="#AF0C18"/>
+            <path d="M14 50C14 22.3858 36.3858 0 64 0H389C416.614 0 439 22.3858 439 50V75C439 102.614 416.614 125 389 125H14V50Z" fill="#E21221"/>
+            <g filter="url(#filter0_d_105_8)">
+            <line x1="14" y1="124.5" x2="139" y2="124.5" stroke="#E21221"/>
+            </g>
+            <g filter="url(#filter1_d_105_8)">
+            <line x1="138.5" y1="276" x2="138.5" y2="401" stroke="#AF0C18"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_105_8" x="0" y="115" width="153" height="29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="7"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_105_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_105_8" result="shape"/>
+            </filter>
+            <filter id="filter1_d_105_8" x="135" y="265" width="23" height="147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="8"/>
+            <feGaussianBlur stdDeviation="5.5"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_105_8"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_105_8" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+            
+      </div>
+      <div class='preloader-dots'>
+         <div class='dot'></div>
+         <div class='dot'></div>
+         <div class='dot'></div>
+         <div class='dot'></div>
+         <div class='dot'></div>
+      </div>
+   </div>
+   <div id="root"></div>
+</body>
+
+</html>

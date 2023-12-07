@@ -1,0 +1,78 @@
+.wrapperSortBlock {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-top: 50px;
+    color: #fff;
+
+
+
+    .wrapperTitle {
+
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .filters {
+        display: flex;
+
+        div {
+            margin-left: 10px;
+
+            span {
+                height: 40px;
+                min-width: 100px;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 5px;
+                text-align: center;
+                border-radius: 10px;
+                border: 2px solid rgb(105, 105, 105);
+            }
+
+            span:hover {
+                background: rgba(251, 93, 93, 0.707);
+            }
+        }
+
+    }
+
+    .sortList {
+        display: flex;
+        justify-content: space-around;
+
+        div{
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(105, 105, 105);
+            width: 140px;
+            height: 40px;
+            background: none;
+            color: #fff;
+            font-size: 16px;
+            background: #262630b8;
+            text-align: center;
+        }
+        
+    }
+
+    .throwOff {
+
+        button{
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            background: #262630b8;
+            border-radius: 10px;
+            color: #fff;
+            border: 2px solid dimgray;
+            cursor: pointer;
+            font-weight: bold;    
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.visibSideMenu{
+    margin: 0 10px;
+}
+
+.rotateArrow{
+    transition: 2s all;
+    transform: rotate(180deg);
+}

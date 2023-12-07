@@ -1,0 +1,154 @@
+@font-face {
+    font-family: vag-world;
+    src: url('../../../fonts/vag-world-bold.ttf');
+}
+
+@font-face {
+    font-family:Montserrat ;
+    src: url('../../../fonts/Montserrat-Regular.ttf');
+}
+
+.wrapperRatesInfo {
+    color: #fff;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 30px;
+
+    .topPartInfoBlock {
+        .titleInfoBlock {
+            line-height: 25px;
+
+            span {
+                font-size: 40px;
+
+            }
+
+            p {
+                margin: 0;
+                font-weight: normal;
+            }
+        }
+
+        .middlePart {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            .list {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Times New Roman', sans-serif;
+                font-weight: lighter;
+                line-height: 40px;
+                font-size: 18px;
+
+                div {
+                    padding: 10px;
+
+                    ul {
+                        padding-left: 20px;
+
+                        li {
+                            .boldText {
+                                font-family: vag-world;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wrapperPromoCode {
+        padding-top: 15px;
+
+        .promoCode {
+            background-color: #181818;
+            width: 450px;
+            height: 350px;
+            border-radius: 10px;
+
+            .promoCodeForm {
+                padding: 20px;
+
+                .topPartForm {
+                    display: flex;
+                    justify-content: space-between;
+
+                    input[type='text'] {
+                        background: none;
+                        border: 3px solid #6666664d;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 50px;
+                        color: #fff;
+                        font-family: vag-world;
+                        font-size: 16px;
+                    }
+
+                    input[type='text']::placeholder {
+                        font-family: vag-world;
+                        font-size: 16px;
+                        padding-left: 10px;
+                    }
+
+                }
+
+                .btnUsePromo {
+                    margin-top: 15px;
+                    width: 100%;
+                    height: 58px;
+                    border-radius: 10px;
+                    font-family: vag-world;
+                    font-size: 18px;
+                    background: #3369ff;
+                    text-transform: uppercase;
+                    color: #fff;
+                    border: none;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                }
+
+                .middlePartForm {
+                    margin-top: 30px;
+                    color: #fff;
+
+                    span {
+                        font-family: Montserrat, sans-serif;
+                        letter-spacing: 2px;
+                        font-weight: bold;
+                        font-size: 25px;
+                    }
+                }
+
+                .bottomPartForm {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        background-color: rgb(255, 0, 112);
+                        width: 100%;
+                        height: 58px;
+                        font-family: vag-world;
+                        font-size: 18px;
+                        border-radius: 10px;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+
+                    .usePromoPrice{
+                        margin-left: 10px;
+                        font-size: 25px;
+                        font-family: Montserrat, sans-serif;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,170 @@
+@mixin formInputs {
+    border: none;
+    background-color: #333;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+@mixin placeholder {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.wrapperMainPart {
+    background-image: url('../../../images/mainBack\ blur.png');
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: 100%, 800px;               
+
+    .backgraundWrapper {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0) 0, transparent 60%, rgba(0, 0, 0, .9));
+        height: 800px;
+        padding-top: 230px;
+
+        .wrapperMainParts {
+            width: 60%;
+            margin: 0 auto;
+
+            .wrapperMainText {
+                text-align: center;
+                color: white;
+
+                h1 {
+                    line-height: 70px;
+                    margin: 0;
+                    margin-bottom: 15px;
+                    font-size: 60px;
+                    
+                }
+
+                span {
+                    font-size: 30px;
+                }
+            }
+
+            .wrapperRegistration {
+                margin-top: 30px;
+                padding: 0 128px;
+                display: flex;
+
+                input {
+                    border: 1px solid rgb(137, 137, 137);
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                    width: 450px;
+                    height: 48px;
+                    border-right: none;
+                    padding: 0 20px;
+                }
+
+                input::placeholder {
+                    font-size: 16px;
+                }
+
+                button {
+                    width: 200px;
+                    background-color: red;
+                    color: white;
+                    height: 50px;
+                    border: 1px solid rgb(165, 17, 17);
+                    margin: 0;
+                    padding: 0;
+                    border-left: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .wrapperRegistrationPopUp {
+            backdrop-filter: blur(10px);
+            height: 800px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            .contentBlock {
+                width: 450px;
+                margin: 230px auto;
+                background-color: #000;
+                border-radius: 10px;
+                padding: 10px;
+
+                form {
+                    margin-left: 90px;
+                    margin-bottom: 30px;
+
+                    .topPartForm {
+                        display: flex;
+                        justify-content: space-between;
+                        h2 {
+                            color: #fff;
+                            letter-spacing: 1px;
+                            margin: 5px;
+                        }
+
+                        span{
+                            color: #fff;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    input {
+                        display: block;
+                        margin: 20px 0;
+                        @include formInputs();
+                    }
+
+                    input::placeholder {
+                        @include placeholder();
+                    }
+
+                    button {
+                        width: 220px;
+                        height: 50px;
+                        background-color: #b00914;
+                        font-size: 16px;
+                        color: #fff;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        padding: 0;
+                        border: none;
+                    }
+
+                    .bottomPartForm{
+                        width: 80%;
+                        p{
+                            color: #fff;
+                            span{
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.visib {
+    display: none;
+}
+
+.error{
+    border: 4px solid #b00914;
+}
+
+.good{
+    border: 4px solid greenyellow;
+}

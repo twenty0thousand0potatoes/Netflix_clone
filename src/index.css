@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'vag-world';
+  src: url('./fonts/vag-world-bold.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'vag-world';
+  background: #000;
+}
+

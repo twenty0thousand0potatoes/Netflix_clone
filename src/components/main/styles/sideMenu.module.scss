@@ -1,0 +1,51 @@
+.wrapperSideMenu {
+    transition: 2s all;
+    border-radius: 0px 400px 400px 0px;
+    height: 400px;
+    background-color: #8c8c8c7a;
+    position: fixed;
+    float: left;
+    margin: 0px -256px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10000;
+
+    .listBlock {
+        ul {
+            padding: 0;
+
+            li::marker {
+                content: "";
+            }
+
+            li {
+                a {
+                    cursor: pointer;
+                    color: #fff;
+                    font-size: 20px;
+                    backdrop-filter: blur(2px);
+                }
+            }
+        }
+
+        margin-right: 40px;
+    }
+
+    .arrowBlock {
+        font-weight: bold;
+        font-size: 35px;
+        border-radius: 10px;
+        cursor: pointer;
+        backdrop-filter: blur(4px);
+        transition: 2s all;
+
+        span {
+            position: relative;
+            top: -5px;
+            color: #fff;
+        }
+
+    }
+}

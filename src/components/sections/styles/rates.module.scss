@@ -1,0 +1,116 @@
+@font-face {
+    font-family: montserrat;
+    src: url('../../../fonts/Montserrat-Regular.ttf');
+}
+
+.wrapperRates {
+    width: 1200px;
+    padding: 30px;
+
+    .titleBlock {
+        color: #fff;
+        padding-left: 70px;
+        font-size: 42px;
+    }
+
+    .contentBlock {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 40px;
+
+        .cardRates {
+            color: #fff;
+            width: 200px;
+            height: 185px;
+            padding: 40px 20px;
+            background-color: #181818;
+            border-radius: 10px;
+
+            .topPartCard {
+
+                border-radius: 20px;
+                width: 160px;
+
+                .titleCard {
+                    font-size: 20px;
+                    line-height: 20px;
+                    background-color: #3369ff;
+                    border-radius: 10px;
+                    padding: 5px;
+
+                    span {
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .period {
+                    margin-top: 10px;
+                    font-size: 30px;
+                }
+            }
+
+
+            .middlePart {
+                display: flex;
+                justify-content: space-between;
+
+                .price {
+                    font-family: montserrat;
+                    font-size: 40px;
+                }
+
+                .add {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #ff0070;
+                    transform: rotate(45deg);
+
+                    div {
+                        color: #fff;
+                        transform: translate(34%, 8%);
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .bottomPart {
+                margin-top: 10px;
+                font-family: montserrat;
+                font-size: 22px;
+                color: #3369ff;
+            }
+        }
+
+        .cardRates:active {
+            transform: scale(1.1);
+        }
+
+        .cardRates:hover {
+            cursor: pointer;
+            border: 1px solid #3369ff;
+            box-shadow: 1px 1px 20px #3369ff;
+
+            .titleCard {
+                background-color: #ff0070;
+            }
+
+            .add {
+                background-color: #3369ff;
+            }
+        }
+    }
+}
+
+
+.active {
+    border: 3px solid #3369ff;
+    box-shadow: 1px 1px 20px #3369ff;
+
+    .titleCard {
+        background-color: #ff0070;
+    }
+}

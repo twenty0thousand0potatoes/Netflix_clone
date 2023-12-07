@@ -1,0 +1,116 @@
+.wrapperAccount {
+    margin-top: 200px;
+    color: #fff;
+
+    .HeaderAccount {
+padding: 0 100px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid dimgray;
+            text-align: center;
+            vertical-align: middle;
+
+
+            span {
+                font-size: 47px;
+            }
+        }
+
+        .outAccount {
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                button {
+                    text-decoration: none;
+                    display: block;
+                    width: 120px;
+                    height: 40px;
+                    background: #262630b8;
+                    border-radius: 10px;
+                    color: #fff;
+                    border: 2px solid dimgray;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+    .middlePartAccount {
+        padding: 10px 100px;
+        display: flex;
+        justify-content: space-between;
+
+        .favourites{
+            font-size: 18px;
+        }
+    }
+
+}
+
+.cardFilm {
+    margin: 10px 30px;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 220px;
+    height: 340px;
+
+    .topPartCard {
+
+        img {
+            transition: 2s all;
+            box-shadow: inset 20px 20px 10px #000;
+            width: 210px;
+            height: 260px;
+            border-radius: 10px;
+        }
+
+        .toolsButton{
+            position: relative;
+            top: -30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+            button{
+                cursor: pointer;
+                background: none;
+                border: 2px solid grey;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 12px;
+            }
+
+        }
+    }
+
+    .bottomPartCard {
+        color: #fff;
+
+        .titleFilm {
+            font-size: 20px;
+        }
+
+    }
+}
+
+.cardFilm:hover {
+    img {
+        transform: scale(1.13);
+        opacity: 0.75;
+    }
+
+    .titleFilm,
+    .duration {
+        text-decoration: underline;
+    }
+}
